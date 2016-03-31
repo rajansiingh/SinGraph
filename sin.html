@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="lib/jsxgraph.css" />
+		<link rel="stylesheet" type="text/css" href="sin.css" />
+		<script type="text/javascript" src="lib/jsxgraphcore.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script type="text/javascript" src="sin.js"></script>
+	</head>
+	<body>
+		<div id="container">
+
+			<div id="functionContainer">
+
+				<div id="equationSelector">
+					y =
+					<select>
+						<option id="1" selected="selected">A Sin(Bx)</option>
+						<option id="2">A Cos(Bx)</option>
+						<option id="3">A Sin(Bx - C)</option>
+						<option id="4">A Cos(Bx-C)</option>
+						<option id="5">A Sin(Bx) + D</option>
+						<option id="6">A Cos(Bx) + D</option>
+						<option id="7">A Sin(Bx - C) + D</option>
+						<option id="8">A Cos(Bx-C) + D</option>
+					</select><span></span>
+				</div>
+				<div id="coordinates">
+					Trace Coordinates: <span>(0,0)</span>
+				</div>
+				<div class="inf">Amplitude :&nbsp;<span id="amp"></span><br/>Period&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<span id="per"></span></div>
+			</div>
+
+			<div id="graphContainer">
+				<div id="graph" class="jxgbox"></div>
+			</div>
+			<div id="argumentsContainer">
+				<div id="A">
+					<label for="A">A= </label>
+					<input type="text" id="valueA" value=1.0>
+					</input>
+					<div id="s" class="slider"></div>
+				</div>
+				<div id="B">
+					<label for="B">B= </label>
+					<input type="text" id="valueB" value=1.0>
+					</input>
+					<div id="t1" class="slider"></div>
+				</div>
+				<div id="C">
+					<label for="C">C= </label>
+					<input type="text" id="valueC" value=2.0>
+					</input>
+					<div id="u" class="slider"></div>
+				</div>
+				<div id="D">
+					<label for="A">D= </label>
+					<input type="text" id="valueD" value=1.0>
+					</input>
+					<div id="v" class="slider"></div>
+				</div>
+				<div class="buttonContainer">
+					<button type="button" id="btnScale">
+						Scale
+					</button>
+					<button type="button" id="btnInfo">
+						Info On
+					</button>
+				</div>
+
+			</div>
+			</div>
+
+	</body>
+</html>
